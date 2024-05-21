@@ -20,6 +20,10 @@ def parsing_documents_into_library(library_name):
 
     return parsing_output
 
+def delete_existing_library(library_name):
+
+    library = Library().load_library(library_name)
+    library.delete_library(confirm_delete=True)
 
 if __name__ == "__main__":
 
@@ -27,3 +31,4 @@ if __name__ == "__main__":
 
     library_name = "compiler_design"
     output = parsing_documents_into_library(library_name)
+    # delete_existing_library(library_name)
