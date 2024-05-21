@@ -17,7 +17,7 @@ def prompt_with_sources(model_name, library_name, prompt):
     print(f"Prompt: {prompt}\n- LLM Response:\n{response}")
     prompter.clear_source_materials()
 
-    return 0
+    return response
 
 
 if __name__ == "__main__":
